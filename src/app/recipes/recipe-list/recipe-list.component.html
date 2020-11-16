@@ -5,20 +5,21 @@
 </div>
 <br>
 <div class="row">
-    <div class="col-xs-12">
-       
-        <div class="card" style="width: 18rem;">
-            <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
+    <div class="col-xs-12 ">
+        <a href="#" class="text-decoration-none ">
+        <div class="card list-group-item clearfix " style="width: 25rem;" *ngFor="let recipe of recipes">
+           
                 <span class="float-right">
-            <img class="card-img-top img-fluid" [src]="recipe.imagePath" alt="Card image cap" style="max-width: 70px;">
+            <img class="card-img-top img-fluid " [src]="recipe.imagePath" alt="Card image cap" style="max-width: 70px;">
         </span>
-            <div class="card-body">
-              <h5 class="card-title mt-n3">{{ recipe.name }}</h5>
-              <p class="card-text">{{ recipe.description }}</p>
+            <div class="card-body mb-n4">
+              <h5 class="card-title mt-n3" style="color:black;">{{ recipe.name }}</h5>
+              <p class="card-text" style="color:black;">{{ recipe.description }}</p>
             </div>
             
-        </a>
+        
         </div>
+    </a>
         <app-recipe-item></app-recipe-item>
     </div>
 </div>
