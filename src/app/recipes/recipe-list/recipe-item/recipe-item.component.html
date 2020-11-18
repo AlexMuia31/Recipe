@@ -1,1 +1,14 @@
-<p>recipe-item works!</p>
+ <a href="#" class="text-decoration-none ">
+        <div class="card list-group-item clearfix " style="width: 25rem;" (click)="onSelected()">
+           
+                <span class="float-right">
+            <img class="card-img-top img-fluid " [src]="recipe.imagePath" alt="Card image cap" style="max-width: 70px;">
+        </span>
+            <div class="card-body mb-n4">
+              <h5 class="card-title mt-n3" style="color:black;">{{ recipe.name }}</h5>
+              <p class="card-text" style="color:black;">{{ recipe.description }}</p>
+            </div>
+            
+        
+        </div>
+    </a>

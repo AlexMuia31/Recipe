@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+  .mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+
+
+  .mobileHide {display: none;}
+
+  
