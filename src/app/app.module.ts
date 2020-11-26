@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingLiftComponent } from './shopping-lift/shopping-lift.component';
 import { ShoppingEditComponent } from './shopping-lift/shopping-edit/shopping-edit.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
